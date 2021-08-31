@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from '@auth0/auth0-angular';
+import { ErrorComponent } from './pages/error/error.component';
+import { ExternalApiComponent } from './pages/external-api/external-api.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { ExternalApiComponent } from './pages/external-api/external-api.component';
-import { ErrorComponent } from './pages/error/error.component';
-import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
+  { path: 'test-ciam-return',
+  children: [
   {
     path: 'profile',
     component: ProfileComponent,
@@ -26,6 +28,9 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full',
   },
+  ]
+},
+
 ];
 
 @NgModule({

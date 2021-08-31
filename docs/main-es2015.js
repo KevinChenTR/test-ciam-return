@@ -873,11 +873,11 @@ LoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home/home.component */ "1LmZ");
-/* harmony import */ var _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/profile/profile.component */ "Y5Lh");
+/* harmony import */ var _auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @auth0/auth0-angular */ "2beD");
+/* harmony import */ var _pages_error_error_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/error/error.component */ "y+ua");
 /* harmony import */ var _pages_external_api_external_api_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/external-api/external-api.component */ "h8vx");
-/* harmony import */ var _pages_error_error_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/error/error.component */ "y+ua");
-/* harmony import */ var _auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @auth0/auth0-angular */ "2beD");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/home.component */ "1LmZ");
+/* harmony import */ var _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/profile/profile.component */ "Y5Lh");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
@@ -888,24 +888,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    {
-        path: 'profile',
-        component: _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_2__["ProfileComponent"],
-        canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_5__["AuthGuard"]],
-    },
-    {
-        path: 'external-api',
-        component: _pages_external_api_external_api_component__WEBPACK_IMPORTED_MODULE_3__["ExternalApiComponent"],
-        canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_5__["AuthGuard"]],
-    },
-    {
-        path: 'error',
-        component: _pages_error_error_component__WEBPACK_IMPORTED_MODULE_4__["ErrorComponent"],
-    },
-    {
-        path: '',
-        component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"],
-        pathMatch: 'full',
+    { path: 'test-ciam-return',
+        children: [
+            {
+                path: 'profile',
+                component: _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_5__["ProfileComponent"],
+                canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]],
+            },
+            {
+                path: 'external-api',
+                component: _pages_external_api_external_api_component__WEBPACK_IMPORTED_MODULE_3__["ExternalApiComponent"],
+                canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]],
+            },
+            {
+                path: 'error',
+                component: _pages_error_error_component__WEBPACK_IMPORTED_MODULE_2__["ErrorComponent"],
+            },
+            {
+                path: '',
+                component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"],
+                pathMatch: 'full',
+            },
+        ]
     },
 ];
 class AppRoutingModule {

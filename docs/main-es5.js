@@ -1864,15 +1864,15 @@
       /* harmony import */
 
 
-      var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ./pages/home/home.component */
-      "1LmZ");
+      var _auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @auth0/auth0-angular */
+      "2beD");
       /* harmony import */
 
 
-      var _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ./pages/profile/profile.component */
-      "Y5Lh");
+      var _pages_error_error_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./pages/error/error.component */
+      "y+ua");
       /* harmony import */
 
 
@@ -1882,15 +1882,15 @@
       /* harmony import */
 
 
-      var _pages_error_error_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! ./pages/error/error.component */
-      "y+ua");
+      var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./pages/home/home.component */
+      "1LmZ");
       /* harmony import */
 
 
-      var _auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-      /*! @auth0/auth0-angular */
-      "2beD");
+      var _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ./pages/profile/profile.component */
+      "Y5Lh");
       /* harmony import */
 
 
@@ -1899,20 +1899,23 @@
       "fXoL");
 
       var routes = [{
-        path: 'profile',
-        component: _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_2__["ProfileComponent"],
-        canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_5__["AuthGuard"]]
-      }, {
-        path: 'external-api',
-        component: _pages_external_api_external_api_component__WEBPACK_IMPORTED_MODULE_3__["ExternalApiComponent"],
-        canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_5__["AuthGuard"]]
-      }, {
-        path: 'error',
-        component: _pages_error_error_component__WEBPACK_IMPORTED_MODULE_4__["ErrorComponent"]
-      }, {
-        path: '',
-        component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"],
-        pathMatch: 'full'
+        path: 'test-ciam-return',
+        children: [{
+          path: 'profile',
+          component: _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_5__["ProfileComponent"],
+          canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]]
+        }, {
+          path: 'external-api',
+          component: _pages_external_api_external_api_component__WEBPACK_IMPORTED_MODULE_3__["ExternalApiComponent"],
+          canActivate: [_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]]
+        }, {
+          path: 'error',
+          component: _pages_error_error_component__WEBPACK_IMPORTED_MODULE_2__["ErrorComponent"]
+        }, {
+          path: '',
+          component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"],
+          pathMatch: 'full'
+        }]
       }];
 
       var AppRoutingModule = function AppRoutingModule() {
