@@ -1,4 +1,4 @@
-# Auth0 Angular SDK sample
+# Auth0 Angular SDK sample modified
 
 This sample app demonstrates the integration of the [Auth0 Angular SDK](https://github.com/auth0/auth0-angular) into an Angular application created using the Angular CLI. This sample is a companion to the [Auth0 Angular SDK Quickstart](https://auth0.com/docs/quickstart/spa/angular).
 
