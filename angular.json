@@ -19,6 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "outputHashing": "all",
             "deployUrl": "test-ciam-return/",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [

@@ -180,7 +180,7 @@
         }, audience && audience !== 'YOUR_API_IDENTIFIER' ? {
           audience: audience
         } : null), {
-          redirectUri: window.location.origin,
+          redirectUri: window.location.origin + '/test-ciam-return',
           errorPath: errorPath
         }),
         httpInterceptor: {
@@ -2251,4 +2251,4 @@
     }
   }, [[0, "runtime", "vendor"]]]);
 })();
-//# sourceMappingURL=main-es5.a61441cb541416d626c5.js.map
+//# sourceMappingURL=main-es5.3e51eb5309e5aff97722.js.map

@@ -17,7 +17,7 @@ export const environment = {
     domain,
     clientId,
     ...(audience && audience !== 'YOUR_API_IDENTIFIER' ? { audience } : null),
-    redirectUri: window.location.origin,
+    redirectUri: window.location.origin + '/test-ciam-return',
     errorPath,
   },
   httpInterceptor: {

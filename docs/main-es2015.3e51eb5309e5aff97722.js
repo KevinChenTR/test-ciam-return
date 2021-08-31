@@ -81,7 +81,7 @@ const { domain, clientId, audience, apiUri, errorPath } = _auth_config_json__WEB
 const environment = {
     production: false,
     auth: Object.assign(Object.assign({ domain,
-        clientId }, (audience && audience !== 'YOUR_API_IDENTIFIER' ? { audience } : null)), { redirectUri: window.location.origin, errorPath }),
+        clientId }, (audience && audience !== 'YOUR_API_IDENTIFIER' ? { audience } : null)), { redirectUri: window.location.origin + '/test-ciam-return', errorPath }),
     httpInterceptor: {
         allowedList: [`${apiUri}/*`],
     },
@@ -1072,4 +1072,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main-es2015.a61441cb541416d626c5.js.map
+//# sourceMappingURL=main-es2015.3e51eb5309e5aff97722.js.map
