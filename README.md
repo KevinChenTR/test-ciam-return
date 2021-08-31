@@ -1,4 +1,22 @@
-# Auth0 Angular SDK sample modified
+# Auth0 Angular SDK sample
+
+## Change environments
+
+Sandbox
+
+```
+  "domain": "main.ciam-sandbox.thomsonreuters.com",
+  "clientId": "9nCd1LA28hLL0ZtewtlvMEXkkEuqZacl",
+```
+
+Nonprod
+
+```
+  "domain": "main.ciam-nonprod.thomsonreuters.com",
+  "clientId": "KBR7lUqbuD86a2jtIOfQvAJu5rjks38R",
+```
+
+## Introduction
 
 This sample app demonstrates the integration of the [Auth0 Angular SDK](https://github.com/auth0/auth0-angular) into an Angular application created using the Angular CLI. This sample is a companion to the [Auth0 Angular SDK Quickstart](https://auth0.com/docs/quickstart/spa/angular).
 

@@ -1434,7 +1434,7 @@
 
     /***/
     function gWCv(module) {
-      module.exports = JSON.parse("{\"domain\":\"main.ciam-sandbox.thomsonreuters.com\",\"clientId\":\"9nCd1LA28hLL0ZtewtlvMEXkkEuqZacl\",\"audience\":\"YOUR_API_IDENTIFIER\",\"apiUri\":\"http://localhost:3001\",\"appUri\":\"http://localhost:4200\",\"errorPath\":\"/error\"}");
+      module.exports = JSON.parse("{\"domain\":\"main.ciam-nonprod.thomsonreuters.com\",\"clientId\":\"KBR7lUqbuD86a2jtIOfQvAJu5rjks38R\",\"audience\":\"YOUR_API_IDENTIFIER\",\"apiUri\":\"http://localhost:3001\",\"appUri\":\"http://localhost:4200\",\"errorPath\":\"/error\"}");
       /***/
     },
 
@@ -2251,4 +2251,4 @@
     }
   }, [[0, "runtime", "vendor"]]]);
 })();
-//# sourceMappingURL=main-es5.3e51eb5309e5aff97722.js.map
+//# sourceMappingURL=main-es5.7a139901b2509fbd2810.js.map

@@ -672,7 +672,7 @@ NavBarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineCo
 /*! exports provided: domain, clientId, audience, apiUri, appUri, errorPath, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"domain\":\"main.ciam-sandbox.thomsonreuters.com\",\"clientId\":\"9nCd1LA28hLL0ZtewtlvMEXkkEuqZacl\",\"audience\":\"YOUR_API_IDENTIFIER\",\"apiUri\":\"http://localhost:3001\",\"appUri\":\"http://localhost:4200\",\"errorPath\":\"/error\"}");
+module.exports = JSON.parse("{\"domain\":\"main.ciam-nonprod.thomsonreuters.com\",\"clientId\":\"KBR7lUqbuD86a2jtIOfQvAJu5rjks38R\",\"audience\":\"YOUR_API_IDENTIFIER\",\"apiUri\":\"http://localhost:3001\",\"appUri\":\"http://localhost:4200\",\"errorPath\":\"/error\"}");
 
 /***/ }),
 
@@ -1072,4 +1072,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main-es2015.3e51eb5309e5aff97722.js.map
+//# sourceMappingURL=main-es2015.7a139901b2509fbd2810.js.map
